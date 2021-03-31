@@ -21,3 +21,8 @@ def train_test_split(X, y, test_size=None, random_state=1234):
 def accuracy(y_true, y_pred):
     acc = np.sum((y_pred == y_true) / len(y_true))
     return acc
+
+
+# Calculation of euclidean distance
+def euclidean_distance(x1, x2):
+    return np.sqrt(np.sum((x1 - x2) ** 2))
